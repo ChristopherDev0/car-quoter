@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quoter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="img/logo-card.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>あなたの車を買う</h1>
+    </header>
+
+    <section>
+        <div class="header-quote">
+            <h1>Quote your car</h1>
+        </div>
+        <div class="container-form">
+            <div class="container-img">
+                <img src="img/toyota_form.jpg" alt="car">
+            </div>
+            <form id="quote-insurance">
+                <div class="field-car">
+                    <label>Brand Selection</label>
+                    <select id="brand">
+                        <option value="">- Type Selection -</option>
+                        <option value="1">American</option>
+                        <option value="2">European</option>
+                        <option value="3">Asian</option>
+                    </select>
+                </div>
+                <div class="field-car">
+                    <label>Kind Selection</label>
+                    <select id="kind">
+                        <option value="">- Type Selection -</option>
+                        <option value="Crossover">Crossover</option>
+                        <option value="Pickup">Pickup </option>
+                        <option value="Universal">Universal</option>
+                        <option value="Sedan">Sedan </option>
+                        <option value="Sports">Sports</option>
+                    </select>
+                </div>
+                <div class="field-car">
+                    <label>Year Selection</label>
+                    <select id="year"></select>
+                </div>
+                <fieldset>
+                    <legend>Type of insurance</legend>
+                    <div class="type-insurance">
+                    <div class="insurance">
+                        <label>Basic</label>
+                        <input type="radio" name="type" value="Basic" checked >
+                    </div>
+                    <div class="insurance">
+                        <label>Full</label>
+                        <input type="radio" name="type" value="Full">
+                    </div>
+                     </div>
+                </fieldset>
+
+                <!-- 
+                    SPINNER
+                 -->
+                 <div class="sk-folding-cube hidden" id="loading">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                  </div>
+
+                 <div id="result"></div>
+                 <div class="button-submit">
+                    <button type="submit">QUOTE CAR</button>
+                 </div>
+
+            </form>
+        </div>
+    </section>
+    
+    <script src="js/app.js"></script>
+
+</body>
+</html>
